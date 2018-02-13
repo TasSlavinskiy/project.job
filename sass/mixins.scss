@@ -1,0 +1,30 @@
+@mixin container-fluid(){
+        width: 80%;
+        max-width: 1140px;
+        margin: 0 auto;
+}
+@mixin outline-none(){
+    border: none;
+    outline: none;
+}
+@mixin new(){
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 1.4 * $font;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: $color-pink;
+    
+    @media(min-width:768px){
+        font-size: 1.6 * $font;
+        line-height: 20px;
+    }
+}
+@mixin placeholder-form(){
+    font-family: "Exo Regular";
+    margin: 0;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $color-lightgrey;
+}

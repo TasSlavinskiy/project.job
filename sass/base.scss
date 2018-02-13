@@ -1,0 +1,38 @@
+@font-face{
+    font-family: "Exo Thin";
+    src: url(../fonts/Exo-Thin.woff)
+    format("woff");
+}
+@font-face{
+    font-family: "Exo Medium";
+    src: url(../fonts/Exo-Medium.woff)
+    format("woff");
+}
+@font-face{
+    font-family: "Exo Regular";
+    src: url(../fonts/Exo-Regular.woff)
+    format("woff");
+}
+@font-face{
+    font-family: "Exo Regular-Italic";
+    src: url(../fonts/Exo-Regular-Italic.woff)
+    format("woff");
+}
+@font-face{
+    font-family: "Lato Regular";
+    src: url(../fonts/lato-regular.woff)
+    format("woff");
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Exo Medium";
+    font-size: 1.6 * $font;
+    color: $color-darkgrey;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}

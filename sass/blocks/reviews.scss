@@ -1,0 +1,115 @@
+//REVIEWS
+
+.reviews{ 
+    font-family: "Exo Medium";
+    font-size: 1.4 * $font;
+    line-height: 1.25;
+    color: $color-darkgrey;
+    background-color:$color-black;
+    background-image: url(../img/reviews-back.png);
+    background-position: center;
+    background-size: 100%;
+}
+.reviews__wrapper{
+    @include container-fluid();
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 15%;
+    padding-bottom: 18%;    
+}
+.reviews__item{
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-top: 100px;
+    text-align: center;
+
+    &:last-of-type{
+    padding-right: 0;
+    }
+    
+    &::before{
+    content: "";
+    position: absolute;
+    background: #4e4e5e;
+    width: 76px;
+    height: 76px;
+    left: 50%;
+    top: 0;
+    margin-left: -40px;
+    border: 2px solid #1d1e24;
+    border-radius: 1px;
+    }
+}
+.reviews__author{
+    margin: 0;
+    margin-bottom: 3px;
+    font-size: 1.6 * $font;
+    color: $color-white;
+}
+.reviews__position{
+    margin: 0;
+    margin-bottom: 28px;
+    color: $color-pink;
+}
+.reviews__quote{
+    display: block;
+    min-height: 120px;
+    margin: 0;
+    font-family: "Exo Regular-Italic";
+    line-height: 24px;
+    color: $color-white;
+    opacity: 0.66;
+}
+.reviews__logo{
+    display: none;
+}
+@media (min-width:768px){
+    .reviews{
+    font-size: 1.6 * $font;
+    }
+    .reviews__wrapper{
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 110px;
+    padding-bottom: 183px;
+    }
+    .reviews__item{
+    width: 30%;
+    margin-bottom: 0;
+    }
+    .reviews__author{
+    font-size: 2.2 * $font;
+    color: $color-white;
+}
+    .reviews__quote{
+    min-height: 170px;
+    line-height: 26px;    
+    }
+}
+@media (min-width:1440px){
+    .reviews__logos{
+        position: absolute;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 980px;
+        left: 7%;
+        bottom: 83px;
+    }
+    .reviews__logo{
+        display: inline-block;
+    }
+}
+    

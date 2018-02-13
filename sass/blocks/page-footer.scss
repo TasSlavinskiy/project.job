@@ -1,0 +1,205 @@
+//PAGE-FOOTER
+
+.page-footer{
+    font-family: "Exo Medium";
+    background-color: $color-white;
+}
+.page-footer__wrapper{
+    @include container-fluid;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 9%;
+    padding-bottom: 6%;
+}
+.page-footer__address{
+    width: 23%;
+}
+.page-footer__support,
+.page-footer__about{
+    width: 16%;
+}
+.page-footer__newsletter{
+    position: relative;
+    width: 29%;
+}
+.page-footer__column{
+    margin-right: 1%;
+}
+.page-footer__column:last-of-type{
+    margin-right: 0;
+}
+.page-footer__title{
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 1 * $font;
+    line-height: 1.25;
+    white-space: nowrap;
+    color: $color-darkgrey;
+}
+.page-footer__address .page-footer__title{
+    position: relative;
+    font-family: "Lato Regular";
+    color: #2c2f49;
+}
+.page-footer__address .page-footer__title::after{
+    content: "";
+    position: absolute;
+    background: url(../img/page-footer-address.png) no-repeat center;
+    width: 22px;
+    height: 27px;
+    left: 23px;
+    top: -54%;
+}
+.page-footer__title:last-of-type{
+    margin-bottom: 20px;
+}
+.page-footer__info{
+    min-height: 140px;
+    margin: 0;
+    font-family: "Exo Regular";
+    font-size: 1.1 * $font;
+    line-height: 14px;
+    color: $color-darkgrey;
+    opacity: 0.66;
+}
+.page-footer__address .page-footer__info{
+    line-height: 13px;
+    opacity: 0.56;
+}
+.page-footer__button{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+.page-footer__email{
+    width: 55%;
+    margin: 0;
+    padding-left: 10%;
+    font-family: "Exo Regular";
+    font-size: 1 * $font;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.4);
+    border: 1px solid rgba(0,0,0,0.4);
+    border-right: none;
+    border-radius: 2px;
+    outline: none;
+}
+.page-footer__email::-moz-placeholder{
+    @include placeholder-form();
+    color: rgba(0,0,0,0.4);
+}
+.page-footer__email::-webkit-input-placeholder{
+    @include placeholder-form();
+    color: rgba(0,0,0,0.4);
+}
+.page-footer__send{
+    position: relative;
+    width: 30%;
+    max-width: 30px;
+    margin: 0;
+    background-color: $color-pink;
+    border: 1px solid $color-pink;
+    border-left: none;
+    outline: none;
+    
+    &::before{
+    content: "";
+    position: absolute;
+    background: url(../img/page-footer-mail.svg) center no-repeat;
+    width: 22px;
+    height: 22px;
+    left: 6%;
+    top: 8%;
+    }
+}
+
+@media(min-width:768px){
+    .page-footer__wrapper{
+    padding-top: 90px;
+    padding-bottom: 60px;
+    }
+    .page-footer__address{
+    width: 235px;
+    padding-right: 28px;    
+    }
+    .page-footer__support,
+    .page-footer__about{
+    width: 165px;
+    }
+    .page-footer__newsletter{
+    width: 270px;
+    }
+    .page-footer__column{
+    margin-right: 30px;
+    }
+    .page-footer__title{
+    margin-bottom: 10px;
+    font-size: 2.2 * $font;
+    }
+    .page-footer__address .page-footer__title{
+    font-size: 2.7 * $font;
+    }
+    .page-footer__address .page-footer__title::before{
+    content: "Ex";
+    position: absolute;
+    z-index: 2;
+    left: 66px;
+    color: $color-white;
+    }
+    .page-footer__address .page-footer__title::after{
+    content: "";
+    position: absolute;
+    background: url(../img/page-footer-address.svg) no-repeat center;    
+    width: 42px;
+    height: 47px;    
+    left: 64px;
+    top: -15%;
+    }
+    .page-footer__info{
+    min-height: 140px;
+    font-size: 1.4 * $font;
+    line-height: 30px;
+    }
+    .page-footer__address .page-footer__info{
+    line-height: 26px;
+    }
+    .page-footer__button{
+    width: 270px;
+    }
+    .page-footer__email{
+    width: 80%;
+    box-sizing: border-box;
+    font-size: 1.6 * $font;
+    line-height: 48px;
+    }
+    .page-footer__send{
+    width: 20%;
+    max-width: none;    
+        
+    &::before{
+    content: "";
+    position: absolute;
+    background: url(../img/page-footer-mail.svg) center no-repeat;
+    width: 22px;
+    height: 22px;
+    left: 30%;
+    top: 30%;
+    }
+}
+}
+@media(min-width:1440px){
+    .page-footer{
+    background-image: url(../img/page-footer-back.svg);
+    background-repeat: no-repeat;
+    background-position: left 100% bottom 10px;
+    }
+    
+}
